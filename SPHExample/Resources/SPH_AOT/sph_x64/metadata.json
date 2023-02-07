@@ -1,0 +1,104 @@
+{
+"cache": {
+  "version": {1, 5, 0},
+  "size": 172847,
+  "fields": {},
+  "kernels": {"boundary_handle": {
+      "kernel_key": "boundary_handle",
+      "args": [{
+          "is_array": true},{
+          "is_array": true},{
+          "is_array": true}],
+      "compiled_data": {
+        "tasks": [{
+            "name": "boundary_handle_c84_0_kernel_0_serial",
+            "block_dim": 0,
+            "grid_dim": 0},{
+            "name": "boundary_handle_c84_0_kernel_1_range_for",
+            "block_dim": 0,
+            "grid_dim": 0}]},
+      "size": 34427,
+      "created_at": 1675679125,
+      "last_used_at": 1675679125},"advance": {
+      "kernel_key": "advance",
+      "args": [{
+          "is_array": true},{
+          "is_array": true},{
+          "is_array": true}],
+      "compiled_data": {
+        "tasks": [{
+            "name": "advance_c82_0_kernel_0_serial",
+            "block_dim": 0,
+            "grid_dim": 0},{
+            "name": "advance_c82_0_kernel_1_range_for",
+            "block_dim": 0,
+            "grid_dim": 0}]},
+      "size": 28412,
+      "created_at": 1675679125,
+      "last_used_at": 1675679125},"update_force": {
+      "kernel_key": "update_force",
+      "args": [{
+          "is_array": true},{
+          "is_array": true},{
+          "is_array": true},{
+          "is_array": true},{
+          "is_array": true},{
+          "is_array": true}],
+      "compiled_data": {
+        "tasks": [{
+            "name": "update_force_c80_0_kernel_0_serial",
+            "block_dim": 0,
+            "grid_dim": 0},{
+            "name": "update_force_c80_0_kernel_1_range_for",
+            "block_dim": 0,
+            "grid_dim": 0}]},
+      "size": 39269,
+      "created_at": 1675679125,
+      "last_used_at": 1675679125},"update_density": {
+      "kernel_key": "update_density",
+      "args": [{
+          "is_array": true},{
+          "is_array": true},{
+          "is_array": true}],
+      "compiled_data": {
+        "tasks": [{
+            "name": "update_density_c78_0_kernel_0_serial",
+            "block_dim": 0,
+            "grid_dim": 0},{
+            "name": "update_density_c78_0_kernel_1_range_for",
+            "block_dim": 0,
+            "grid_dim": 0}]},
+      "size": 29993,
+      "created_at": 1675679125,
+      "last_used_at": 1675679125},"initialize_particle": {
+      "kernel_key": "initialize_particle",
+      "args": [{
+          "is_array": true},{
+          "is_array": true},{
+          "is_array": true},{
+          "is_array": true},{
+          "is_array": true}],
+      "compiled_data": {
+        "tasks": [{
+            "name": "initialize_particle_c76_0_kernel_1_serial",
+            "block_dim": 0,
+            "grid_dim": 0},{
+            "name": "initialize_particle_c76_0_kernel_0_range_for",
+            "block_dim": 0,
+            "grid_dim": 0}]},
+      "size": 32442,
+      "created_at": 1675679124,
+      "last_used_at": 1675679124},"initialize": {
+      "kernel_key": "initialize",
+      "args": [{
+          "is_array": true},{
+          "is_array": true},{
+          "is_array": true}],
+      "compiled_data": {
+        "tasks": [{
+            "name": "initialize_c74_0_kernel_0_serial",
+            "block_dim": 0,
+            "grid_dim": 0}]},
+      "size": 8304,
+      "created_at": 1675679124,
+      "last_used_at": 1675679124}}}}

@@ -1,0 +1,720 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "TaichiAOTPlugin Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"Linux",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"Linux",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TaichiAOTPlugin Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"Linux",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"Linux",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"Linux",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TaichiAOTPlugin Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"Linux",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"Linux",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"Linux",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TaichiAOTPlugin Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"Linux",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"Linux",
+				"Test",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"Linux",
+				"Test",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TaichiAOTPlugin Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"Linux",
+				"Test",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"Linux",
+				"Shipping",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"Linux",
+				"Shipping",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TaichiAOTPlugin Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"Linux",
+				"Shipping",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin LinuxArm64 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"LinuxArm64",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin LinuxArm64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"LinuxArm64",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TaichiAOTPlugin LinuxArm64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin LinuxArm64 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"LinuxArm64",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin LinuxArm64 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin LinuxArm64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TaichiAOTPlugin LinuxArm64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin LinuxArm64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin LinuxArm64 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"LinuxArm64",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin LinuxArm64 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"LinuxArm64",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TaichiAOTPlugin LinuxArm64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin LinuxArm64 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"LinuxArm64",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin LinuxArm64 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"LinuxArm64",
+				"Test",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin LinuxArm64 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"LinuxArm64",
+				"Test",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TaichiAOTPlugin LinuxArm64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin LinuxArm64 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"LinuxArm64",
+				"Test",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin LinuxArm64 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"LinuxArm64",
+				"Shipping",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin LinuxArm64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"LinuxArm64",
+				"Shipping",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TaichiAOTPlugin LinuxArm64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPlugin LinuxArm64 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPlugin",
+				"LinuxArm64",
+				"Shipping",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPluginEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPluginEditor",
+				"Linux",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPluginEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPluginEditor",
+				"Linux",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TaichiAOTPluginEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPluginEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPluginEditor",
+				"Linux",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPluginEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPluginEditor",
+				"Linux",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPluginEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPluginEditor",
+				"Linux",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TaichiAOTPluginEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPluginEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPluginEditor",
+				"Linux",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPluginEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPluginEditor",
+				"Linux",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPluginEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPluginEditor",
+				"Linux",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"TaichiAOTPluginEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "TaichiAOTPluginEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"TaichiAOTPluginEditor",
+				"Linux",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		}
+	]
+}

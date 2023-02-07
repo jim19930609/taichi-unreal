@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "TaichiAOTPluginEditor Editor Linux Development (TaichiAOTPlugin)",
+            "intelliSenseMode": "clang-x64",
+            "compileCommands": "/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/.vscode/compileCommands_TaichiAOTPlugin.json",
+            "cStandard": "c17",
+            "cppStandard": "c++14"
+        },
+        {
+            "name": "Linux",
+            "intelliSenseMode": "clang-x64",
+            "compileCommands": "/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/.vscode/compileCommands_Default.json",
+            "cStandard": "c17",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}

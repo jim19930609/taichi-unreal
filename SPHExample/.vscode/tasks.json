@@ -1,0 +1,720 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "SPHExample Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"Linux",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"Linux",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SPHExample Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"Linux",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"Linux",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"Linux",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SPHExample Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"Linux",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"Linux",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"Linux",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SPHExample Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"Linux",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"Linux",
+				"Test",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"Linux",
+				"Test",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SPHExample Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"Linux",
+				"Test",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"Linux",
+				"Shipping",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"Linux",
+				"Shipping",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SPHExample Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"Linux",
+				"Shipping",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample LinuxArm64 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"LinuxArm64",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample LinuxArm64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"LinuxArm64",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SPHExample LinuxArm64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample LinuxArm64 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"LinuxArm64",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample LinuxArm64 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample LinuxArm64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SPHExample LinuxArm64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample LinuxArm64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample LinuxArm64 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"LinuxArm64",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample LinuxArm64 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"LinuxArm64",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SPHExample LinuxArm64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample LinuxArm64 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"LinuxArm64",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample LinuxArm64 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"LinuxArm64",
+				"Test",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample LinuxArm64 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"LinuxArm64",
+				"Test",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SPHExample LinuxArm64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample LinuxArm64 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"LinuxArm64",
+				"Test",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample LinuxArm64 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"LinuxArm64",
+				"Shipping",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample LinuxArm64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"LinuxArm64",
+				"Shipping",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SPHExample LinuxArm64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExample LinuxArm64 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExample",
+				"LinuxArm64",
+				"Shipping",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExampleEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExampleEditor",
+				"Linux",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExampleEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExampleEditor",
+				"Linux",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SPHExampleEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExampleEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExampleEditor",
+				"Linux",
+				"Debug",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExampleEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExampleEditor",
+				"Linux",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExampleEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExampleEditor",
+				"Linux",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SPHExampleEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExampleEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExampleEditor",
+				"Linux",
+				"DebugGame",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExampleEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExampleEditor",
+				"Linux",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExampleEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExampleEditor",
+				"Linux",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SPHExampleEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		},
+		{
+			"label": "SPHExampleEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SPHExampleEditor",
+				"Linux",
+				"Development",
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/taichigraphics/UnrealEngine"
+			}
+		}
+	]
+}

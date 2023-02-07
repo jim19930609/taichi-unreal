@@ -1,0 +1,29 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{D3B0846F-3303-4CEB-AF3D-26118272F42C}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "SPHExample",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "AOTPlugin",
+			"Enabled": true
+		}
+	]
+}

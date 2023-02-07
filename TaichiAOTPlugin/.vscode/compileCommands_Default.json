@@ -1,0 +1,42 @@
+[
+	{
+		"file": "/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/Plugins/AOTPlugin/Source/AOTPlugin/AOTPlugin.Build.cs",
+		"command": "/home/taichigraphics/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/.vscode/compileCommands_Default/AOTPlugin.34.rsp",
+		"directory": "/home/taichigraphics/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/Plugins/AOTPlugin/Source/AOTPlugin/Private/AOTPlugin.cpp",
+		"command": "/home/taichigraphics/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/.vscode/compileCommands_Default/AOTPlugin.34.rsp",
+		"directory": "/home/taichigraphics/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/Plugins/AOTPlugin/Source/AOTPlugin/Public/AOTPlugin.h",
+		"command": "/home/taichigraphics/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/.vscode/compileCommands_Default/AOTPlugin.34.rsp",
+		"directory": "/home/taichigraphics/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/Source/TaichiAOTPlugin/TaichiAOTPlugin.Build.cs",
+		"command": "/home/taichigraphics/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/.vscode/compileCommands_Default/TaichiAOTPlugin.200.rsp",
+		"directory": "/home/taichigraphics/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/Source/TaichiAOTPlugin/TaichiAOTPlugin.cpp",
+		"command": "/home/taichigraphics/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/.vscode/compileCommands_Default/TaichiAOTPlugin.200.rsp",
+		"directory": "/home/taichigraphics/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/Source/TaichiAOTPlugin/TaichiAOTPlugin.h",
+		"command": "/home/taichigraphics/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/.vscode/compileCommands_Default/TaichiAOTPlugin.200.rsp",
+		"directory": "/home/taichigraphics/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/Source/TaichiAOTPlugin/TaichiAOTPluginGameModeBase.cpp",
+		"command": "/home/taichigraphics/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/.vscode/compileCommands_Default/TaichiAOTPlugin.200.rsp",
+		"directory": "/home/taichigraphics/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/Source/TaichiAOTPlugin/TaichiAOTPluginGameModeBase.h",
+		"command": "/home/taichigraphics/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/.vscode/compileCommands_Default/TaichiAOTPlugin.200.rsp",
+		"directory": "/home/taichigraphics/UnrealEngine/Engine/Source"
+	}
+]

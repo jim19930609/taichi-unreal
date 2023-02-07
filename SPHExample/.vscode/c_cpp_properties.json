@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "SPHExampleEditor Editor Linux Development (SPHExample)",
+            "intelliSenseMode": "clang-x64",
+            "compileCommands": "/home/taichigraphics/UnrealProjects/SPHExample/.vscode/compileCommands_SPHExample.json",
+            "cStandard": "c17",
+            "cppStandard": "c++14"
+        },
+        {
+            "name": "Linux",
+            "intelliSenseMode": "clang-x64",
+            "compileCommands": "/home/taichigraphics/UnrealProjects/SPHExample/.vscode/compileCommands_Default.json",
+            "cStandard": "c17",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,121 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch SPHExample (Debug)",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealProjects/SPHExample/Binaries/Linux/UnrealGame-Linux-Debug",
+			"preLaunchTask": "SPHExample Linux Debug Build",
+			"args": [
+			],
+			"cwd": "/home/taichigraphics/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/taichigraphics/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch SPHExample (DebugGame)",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealProjects/SPHExample/Binaries/Linux/UnrealGame-Linux-DebugGame",
+			"preLaunchTask": "SPHExample Linux DebugGame Build",
+			"args": [
+			],
+			"cwd": "/home/taichigraphics/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/taichigraphics/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch SPHExample (Development)",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealProjects/SPHExample/Binaries/Linux/UnrealGame",
+			"preLaunchTask": "SPHExample Linux Development Build",
+			"args": [
+			],
+			"cwd": "/home/taichigraphics/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/taichigraphics/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch SPHExample (Test)",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealProjects/SPHExample/Binaries/Linux/UnrealGame-Linux-Test",
+			"preLaunchTask": "SPHExample Linux Test Build",
+			"args": [
+			],
+			"cwd": "/home/taichigraphics/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/taichigraphics/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch SPHExample (Shipping)",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealProjects/SPHExample/Binaries/Linux/UnrealGame-Linux-Shipping",
+			"preLaunchTask": "SPHExample Linux Shipping Build",
+			"args": [
+			],
+			"cwd": "/home/taichigraphics/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/taichigraphics/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch SPHExampleEditor (Debug)",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+			"preLaunchTask": "SPHExampleEditor Linux Debug Build",
+			"args": [
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject"
+			],
+			"cwd": "/home/taichigraphics/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/taichigraphics/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch SPHExampleEditor (DebugGame)",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+			"preLaunchTask": "SPHExampleEditor Linux DebugGame Build",
+			"args": [
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject"
+			],
+			"cwd": "/home/taichigraphics/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/taichigraphics/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch SPHExampleEditor (Development)",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealEngine/Engine/Binaries/Linux/UnrealEditor",
+			"preLaunchTask": "SPHExampleEditor Linux Development Build",
+			"args": [
+				"/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject"
+			],
+			"cwd": "/home/taichigraphics/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/taichigraphics/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=/home/taichigraphics/UnrealProjects/SPHExample/SPHExample.uproject",
+				"-game",
+				"-engine"
+			],
+			"console": "internalConsole",
+			"internalConsoleOptions": "openOnSessionStart",
+			"stopAtEntry": false,
+			"cwd": "/home/taichigraphics/UnrealEngine"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+[
+	{
+		"file": "/home/taichigraphics/UnrealProjects/SPHExample/Source/SPHExample/SPHExample.Build.cs",
+		"command": "/home/taichigraphics/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/taichigraphics/UnrealProjects/SPHExample/.vscode/compileCommands_Default/SPHExample.199.rsp",
+		"directory": "/home/taichigraphics/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/taichigraphics/UnrealProjects/SPHExample/Source/SPHExample/SPHExample.cpp",
+		"command": "/home/taichigraphics/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/taichigraphics/UnrealProjects/SPHExample/.vscode/compileCommands_Default/SPHExample.199.rsp",
+		"directory": "/home/taichigraphics/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/taichigraphics/UnrealProjects/SPHExample/Source/SPHExample/SPHExample.h",
+		"command": "/home/taichigraphics/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/taichigraphics/UnrealProjects/SPHExample/.vscode/compileCommands_Default/SPHExample.199.rsp",
+		"directory": "/home/taichigraphics/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/taichigraphics/UnrealProjects/SPHExample/Source/SPHExample/SPHExampleCharacter.cpp",
+		"command": "/home/taichigraphics/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/taichigraphics/UnrealProjects/SPHExample/.vscode/compileCommands_Default/SPHExample.199.rsp",
+		"directory": "/home/taichigraphics/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/taichigraphics/UnrealProjects/SPHExample/Source/SPHExample/SPHExampleCharacter.h",
+		"command": "/home/taichigraphics/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/taichigraphics/UnrealProjects/SPHExample/.vscode/compileCommands_Default/SPHExample.199.rsp",
+		"directory": "/home/taichigraphics/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/taichigraphics/UnrealProjects/SPHExample/Source/SPHExample/SPHExampleGameMode.cpp",
+		"command": "/home/taichigraphics/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/taichigraphics/UnrealProjects/SPHExample/.vscode/compileCommands_Default/SPHExample.199.rsp",
+		"directory": "/home/taichigraphics/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/taichigraphics/UnrealProjects/SPHExample/Source/SPHExample/SPHExampleGameMode.h",
+		"command": "/home/taichigraphics/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/taichigraphics/UnrealProjects/SPHExample/.vscode/compileCommands_Default/SPHExample.199.rsp",
+		"directory": "/home/taichigraphics/UnrealEngine/Engine/Source"
+	}
+]

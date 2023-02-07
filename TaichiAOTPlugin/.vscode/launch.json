@@ -1,0 +1,121 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch TaichiAOTPlugin (Debug)",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/Binaries/Linux/UnrealGame-Linux-Debug",
+			"preLaunchTask": "TaichiAOTPlugin Linux Debug Build",
+			"args": [
+			],
+			"cwd": "/home/taichigraphics/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/taichigraphics/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch TaichiAOTPlugin (DebugGame)",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/Binaries/Linux/UnrealGame-Linux-DebugGame",
+			"preLaunchTask": "TaichiAOTPlugin Linux DebugGame Build",
+			"args": [
+			],
+			"cwd": "/home/taichigraphics/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/taichigraphics/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch TaichiAOTPlugin (Development)",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/Binaries/Linux/UnrealGame",
+			"preLaunchTask": "TaichiAOTPlugin Linux Development Build",
+			"args": [
+			],
+			"cwd": "/home/taichigraphics/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/taichigraphics/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch TaichiAOTPlugin (Test)",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/Binaries/Linux/UnrealGame-Linux-Test",
+			"preLaunchTask": "TaichiAOTPlugin Linux Test Build",
+			"args": [
+			],
+			"cwd": "/home/taichigraphics/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/taichigraphics/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch TaichiAOTPlugin (Shipping)",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/Binaries/Linux/UnrealGame-Linux-Shipping",
+			"preLaunchTask": "TaichiAOTPlugin Linux Shipping Build",
+			"args": [
+			],
+			"cwd": "/home/taichigraphics/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/taichigraphics/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch TaichiAOTPluginEditor (Debug)",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+			"preLaunchTask": "TaichiAOTPluginEditor Linux Debug Build",
+			"args": [
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject"
+			],
+			"cwd": "/home/taichigraphics/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/taichigraphics/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch TaichiAOTPluginEditor (DebugGame)",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+			"preLaunchTask": "TaichiAOTPluginEditor Linux DebugGame Build",
+			"args": [
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject"
+			],
+			"cwd": "/home/taichigraphics/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/taichigraphics/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch TaichiAOTPluginEditor (Development)",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealEngine/Engine/Binaries/Linux/UnrealEditor",
+			"preLaunchTask": "TaichiAOTPluginEditor Linux Development Build",
+			"args": [
+				"/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject"
+			],
+			"cwd": "/home/taichigraphics/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/taichigraphics/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "/home/taichigraphics/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=/home/taichigraphics/UnrealProjects/TaichiAOTPlugin/TaichiAOTPlugin.uproject",
+				"-game",
+				"-engine"
+			],
+			"console": "internalConsole",
+			"internalConsoleOptions": "openOnSessionStart",
+			"stopAtEntry": false,
+			"cwd": "/home/taichigraphics/UnrealEngine"
+		}
+	]
+}
