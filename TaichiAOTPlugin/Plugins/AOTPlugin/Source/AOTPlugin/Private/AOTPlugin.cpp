@@ -14,9 +14,10 @@ void FAOTPluginModule::StartupModule()
 
 	// Get the base directory of this plugin
 	FString BaseDir = IPluginManager::Get().FindPlugin("AOTPlugin")->GetBaseDir();
+	FString LibraryPath;
+	FString RuntimeDir;
 
 	// Add on the relative location of the third party dll and load it
-	FString LibraryPath;
 #if PLATFORM_WINDOWS
 	//LibraryPath = FPaths::Combine(*BaseDir, TEXT("Binaries/ThirdParty/TaichiLibrary/Win64/ExampleLibrary.dll"));
 	UE_LOG(LogTemp, Fatal, TEXT("Taichi C-API on Windows not supported yet!"));
@@ -24,14 +25,14 @@ void FAOTPluginModule::StartupModule()
     //LibraryPath = FPaths::Combine(*BaseDir, TEXT("Source/ThirdParty/TaichiLibrary/Mac/Release/libExampleLibrary.dylib"));
 	UE_LOG(LogTemp, Fatal, TEXT("Taichi C-API on MacOS not supported yet!"));
 #elif PLATFORM_LINUX
-	LibraryPath = FPaths::Combine(*BaseDir, TEXT("Source/AOTPlugin/Public/c_api/lib/libtaichi_c_api.so"));
+	LibraryPath = FPaths::Combine(*BaseDir, TEXT("Source/AOTPlugin/Public/C_API_LINUX/lib/libtaichi_c_api.so"));
+	RuntimeDir = FPaths::Combine(*BaseDir, TEXT("Source/AOTPlugin/Public/C_API_LINUX/runtime"));
 #endif // PLATFORM_WINDOWS
 
 	LibraryHandle = !LibraryPath.IsEmpty() ? FPlatformProcess::GetDllHandle(*LibraryPath) : nullptr;
 	if (LibraryHandle)
 	{
-		FString runtime_dir = FPaths::Combine(*BaseDir, TEXT("Source/AOTPlugin/Public/c_api/runtime"));
-		setenv("TI_LIB_DIR", TCHAR_TO_ANSI(*runtime_dir), 1);
+		setenv("TI_LIB_DIR", TCHAR_TO_ANSI(*RuntimeDir), 1);
 
 		UE_LOG(LogTemp, Log, TEXT("Taichi C-API loaded successfully!"));
 	}

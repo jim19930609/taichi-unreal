@@ -3,23 +3,38 @@
 #include "Modules/ModuleManager.h"
 #include "AOTPlugin.h"
 
-
 // Sets default values
 ASPH_Particles_Box::ASPH_Particles_Box()
 {
 	
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+	Root = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
+	RootComponent = Root;
+
+	InstancedMesh = CreateDefaultSubobject<UInstancedStaticMeshComponent>(TEXT("InstancedStaticMesh"));
+	InstancedMesh->SetMobility(EComponentMobility::Static);
+	InstancedMesh->SetCollisionEnabled(ECollisionEnabled::PhysicsOnly);
+    InstancedMesh->SetGenerateOverlapEvents(false);
+
+    InstancedMesh->SetupAttachment(RootComponent);
+	InstancedMesh->RegisterComponent();
+
+    InstancedMesh->ClearInstances();
+    for (int i = 0; i < NR_PARTICLES; i++)
+    {
+        InstancedMesh->AddInstance(FTransform(FVector(0.f, 0.f, 0.f)), false);
+    }
+
 }
 
 // Called when the game starts or when spawned
 void ASPH_Particles_Box::BeginPlay()
 {
 	Super::BeginPlay();
-
-	// Run Taichi initialization code to determine initial particle positions
-	// 1. Initialize Taichi runtime
-
+    
+    // 1. Initialize Taichi runtime
 	arch_ = TI_ARCH_CUDA;
 	runtime_ = ti::Runtime(arch_);
 
@@ -79,26 +94,12 @@ void ASPH_Particles_Box::BeginPlay()
     k_boundary_handle_[1] = vel_;
     k_boundary_handle_[2] = boundary_box_;
 
-
-	{
-		auto e = ti::get_last_error();
-		UE_LOG(LogTemp, Warning, TEXT("Error: %s"), e.error);
-
-		FString error_msg(e.message.c_str());
-		UE_LOG(LogTemp, Warning, TEXT("%s"), *error_msg);
-	}
-    
+	// Run Taichi initialization code to determine initial particle positions
 	k_initialize_.launch();
     k_initialize_particle_.launch();
     runtime_.wait();
-	
-	std::vector<float> positions(NR_PARTICLES * 3);
-	pos_.read(positions);
-    for (int i = 0; i < 10; i++)
-    {
-        UE_LOG(LogTemp, Warning, TEXT("Init Particle %d: %f, %f, %f"), i, positions[i * 3], positions[i * 3 + 1], positions[i * 3 + 2]);
-    }
-	
+
+    Update();
 }
 
 // Called every frame
@@ -114,21 +115,18 @@ void ASPH_Particles_Box::Tick(float DeltaTime)
         k_boundary_handle_.launch();
     }
     runtime_.wait();
-	
-	{
-		auto e = ti::get_last_error();
-		UE_LOG(LogTemp, Warning, TEXT("Error: %s"), e.error);
+    Update();
+}
 
-		FString error_msg(e.message.c_str());
-		UE_LOG(LogTemp, Warning, TEXT("%s"), *error_msg);
-	}
-	
-	static int turn = 0;
-	UE_LOG(LogTemp, Warning, TEXT(" --- Turn %d --- "), turn++);
+void ASPH_Particles_Box::Update() {
 	std::vector<float> positions(NR_PARTICLES * 3);
 	pos_.read(positions);
-    for (int i = 0; i < 10; i++)
-    {
-        UE_LOG(LogTemp, Warning, TEXT("Particle %d: %f, %f, %f"), i, positions[i * 3], positions[i * 3 + 1], positions[i * 3 + 2]);
+
+    float scale = 5000;
+    for (size_t i = 0; i < NR_PARTICLES; i++) {
+        FVector NewLocation = FVector(positions[i * 3], positions[i * 3 + 2], positions[i * 3 + 1]) * scale;
+        FTransform NewTransform = FTransform(NewLocation);
+        InstancedMesh->UpdateInstanceTransform(i, NewTransform, false, true, true);
     }
+    InstancedMesh->MarkRenderStateDirty();
 }

@@ -12,9 +12,14 @@ public class AOTPlugin : ModuleRules
 		PublicDefinitions.Add("TI_WITH_CUDA=1");
 		PublicDefinitions.Add("TI_WITH_CPU=1");
 
+		string libIncludePath = ModuleDirectory;
+		if (Target.Platform == UnrealTargetPlatform.Linux) {
+			libIncludePath = Path.Combine(libIncludePath, "Public/C_API_LINUX/include");
+		}
+
 		PublicIncludePaths.AddRange(
 			new string[] {
-				Path.Combine(ModuleDirectory, "Public/c_api/include"),
+				libIncludePath,
 				Path.Combine(ModuleDirectory, "Public")
 				// ... add public include paths required here ...
 			}

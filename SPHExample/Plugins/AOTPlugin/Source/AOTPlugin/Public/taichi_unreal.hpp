@@ -1,11 +1,5 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
+// C++ wrapper of Taichi C-API
 #pragma once
-
-#include "AOTPlugin.h"
-#include "Core.h"
-#include "taichi/taichi.h"
-
 #include <algorithm>
 #include <cstddef>
 #include <cstring>
@@ -14,6 +8,8 @@
 #include <map>
 #include <string>
 #include <utility>
+#include "taichi/taichi.h"
+#include "AOTPlugin.h"
 
 /*
   This is a modified version of the original "taichi/cpp/taichi.hpp"
@@ -51,7 +47,6 @@ struct Version {
     return version;
   }
 };
-
 inline Version get_version() {
   Version out{};
   out.version = CALL_C_API_FUNC(ti_get_version)();

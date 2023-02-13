@@ -3,6 +3,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "taichi_unreal.hpp"
+#include "Components/InstancedStaticMeshComponent.h"
 #include "SPH_Particles_Box.generated.h"
 
 UCLASS()
@@ -22,16 +23,16 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-public:
+	void Update();
 
-private:
+public:
 	// Taichi AOT Members
-	static const uint32_t NR_PARTICLES = 100;
+	static const uint32_t NR_PARTICLES = 2000;
 	static const uint32_t SUBSTEPS = 1;
 
+	TiArch arch_;
 	ti::Runtime runtime_;
 	ti::AotModule module_;
-	TiArch arch_;
 
 	ti::Kernel k_initialize_;
 	ti::Kernel k_initialize_particle_;
@@ -50,4 +51,9 @@ private:
 	ti::NdArray<float> gravity_;
 	ti::NdArray<float> pos_;
 
+	UPROPERTY()
+	USceneComponent* Root;
+
+	UPROPERTY(VisibleAnywhere)
+	UInstancedStaticMeshComponent* InstancedMesh;
 };
