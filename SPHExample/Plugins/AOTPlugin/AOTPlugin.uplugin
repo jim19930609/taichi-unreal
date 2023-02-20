@@ -19,7 +19,8 @@
 			"Type": "Runtime",
 			"LoadingPhase": "PreDefault",
 			"PlatformAllowList": [
-				"Linux"
+				"Linux",
+				"Win64"
 			]
 		}
 	]

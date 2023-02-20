@@ -15,6 +15,8 @@ public class AOTPlugin : ModuleRules
 		string libIncludePath = ModuleDirectory;
 		if (Target.Platform == UnrealTargetPlatform.Linux) {
 			libIncludePath = Path.Combine(libIncludePath, "Public/C_API_LINUX/include");
+		} else if(Target.Platform == UnrealTargetPlatform.Win64) {
+			libIncludePath = Path.Combine(libIncludePath, "Public/C_API_WINDOWS/include");
 		}
 
 		PublicIncludePaths.AddRange(

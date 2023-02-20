@@ -19,8 +19,8 @@
 			"Name": "AOTPlugin",
 			"Type": "Runtime",
 			"LoadingPhase": "PreDefault",
-			"PlatformAllowList": [
-				"Linux"
+			"WhitelistPlatforms": [
+				"Linux", "Win64"
 			]
 		}
 	]

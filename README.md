@@ -1,13 +1,10 @@
 # Taichi AOT Plugin for UE5
-Currently only support on Linux platform
-TODO: Add C-API library for Windows & MacOS
+Supports Linux & Windows
 
 ## SPH AOT Example
 This is the ultimate example with AOT Plugin integrated, which demonstrates SPH AOT runs in UE5 project.
 
 C++ class `SPH_Particles_Box` contains the major AOT implementation.
-
-TODO: Use the resulting positions from "SPH AOT" to render some UE5 static meshes.
 
 SPH_AOT files are generated from 
 ```
@@ -15,7 +12,7 @@ git@github.com:taichi-dev/taichi-aot-demo.git
 commit: d1a4842 [misc] Remove usage of deprecated kwarg in rw_texture type annotation (#111)
 ```
 
-C-API library is generated from
+C-API library was generated using:
 ```
 git@github.com:taichi-dev/taichi.git
 commit: 2603e6695 [llvm] Unify the llvm context of host and device (#7249)
