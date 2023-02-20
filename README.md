@@ -35,7 +35,7 @@ You'll find C-API library in: `{TAICHI_REPO}/_skbuild/{OS_NAME}/cmake-install/c_
 - Regenerate `taichi_unreal.hpp` if neccessary. (`taichi_unreal.hpp` is generated from `taichi.hpp` by replacing all function calls to C-API with a macro `CALL_C_API_FUNC`, which wraps the original direct function calls with `dlopen` & `dlsym`. TODO: Automatically generate `taichi_unreal.hpp` from `taichi.hpp`)
 
 4. Generate Taichi AOT Plugin
-- UE interface: `Edit->Plugins->AOTPlugin->Package
+- UE interface: `Edit->Plugins->AOTPlugin->Package`
 
 5. Import Plugin in your project
 - Take SPHExample project as an example, put the generated `AOTPlugin` under `SPHExample/Plugins/`
