@@ -60,7 +60,7 @@ endif()
 add_library(taichi_c_api SHARED IMPORTED)
 
 set_target_properties(taichi_c_api PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/taichigraphics/workspace/TaichiRepos/taichi2/_skbuild/linux-x86_64-3.10/cmake-install/c_api/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/taichigraphics/workspace/TaichiRepos/taichi3/_skbuild/linux-x86_64-3.10/cmake-install/c_api/include"
 )
 
 # Load information for each installed configuration.

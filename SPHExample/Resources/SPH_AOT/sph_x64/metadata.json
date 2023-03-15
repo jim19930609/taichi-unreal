@@ -1,14 +1,47 @@
 {
 "cache": {
-  "version": {1, 5, 0},
-  "size": 172847,
+  "version": {1, 6, 0},
+  "size": 148018,
   "fields": {},
   "kernels": {"boundary_handle": {
       "kernel_key": "boundary_handle",
       "args": [{
-          "is_array": true},{
-          "is_array": true},{
-          "is_array": true}],
+          "is_array": true,
+          "total_dim": 2,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}},{
+          "is_array": true,
+          "total_dim": 2,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}},{
+          "is_array": true,
+          "total_dim": 2,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}}],
       "compiled_data": {
         "tasks": [{
             "name": "boundary_handle_c84_0_kernel_0_serial",
@@ -17,14 +50,105 @@
             "name": "boundary_handle_c84_0_kernel_1_range_for",
             "block_dim": 0,
             "grid_dim": 0}]},
-      "size": 34427,
-      "created_at": 1675679125,
-      "last_used_at": 1675679125},"advance": {
+      "size": 30122,
+      "created_at": 1678850987,
+      "last_used_at": 1678850987,
+      "rets": [],
+      "ret_type": ptr {
+        "type_kind": 3
+        "content": {
+          "elements_": [],
+          "layout_": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"}},
+      "ret_size": 0,
+      "args_type": ptr {
+        "type_kind": 3
+        "content": {
+          "elements_": [{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_0",
+              "offset": 0},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_1",
+              "offset": 8},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_2",
+              "offset": 16}],
+          "layout_": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"}},
+      "args_size": 24},"advance": {
       "kernel_key": "advance",
       "args": [{
-          "is_array": true},{
-          "is_array": true},{
-          "is_array": true}],
+          "is_array": true,
+          "total_dim": 2,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}},{
+          "is_array": true,
+          "total_dim": 2,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}},{
+          "is_array": true,
+          "total_dim": 2,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}}],
       "compiled_data": {
         "tasks": [{
             "name": "advance_c82_0_kernel_0_serial",
@@ -33,17 +157,133 @@
             "name": "advance_c82_0_kernel_1_range_for",
             "block_dim": 0,
             "grid_dim": 0}]},
-      "size": 28412,
-      "created_at": 1675679125,
-      "last_used_at": 1675679125},"update_force": {
+      "size": 24287,
+      "created_at": 1678850987,
+      "last_used_at": 1678850987,
+      "rets": [],
+      "ret_type": ptr {
+        "type_kind": 3
+        "content": {
+          "elements_": [],
+          "layout_": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"}},
+      "ret_size": 0,
+      "args_type": ptr {
+        "type_kind": 3
+        "content": {
+          "elements_": [{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_0",
+              "offset": 0},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_1",
+              "offset": 8},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_2",
+              "offset": 16}],
+          "layout_": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"}},
+      "args_size": 24},"update_force": {
       "kernel_key": "update_force",
       "args": [{
-          "is_array": true},{
-          "is_array": true},{
-          "is_array": true},{
-          "is_array": true},{
-          "is_array": true},{
-          "is_array": true}],
+          "is_array": true,
+          "total_dim": 2,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}},{
+          "is_array": true,
+          "total_dim": 2,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}},{
+          "is_array": true,
+          "total_dim": 1,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 0
+              "content": {
+                "type": 1}}}},{
+          "is_array": true,
+          "total_dim": 1,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 0
+              "content": {
+                "type": 1}}}},{
+          "is_array": true,
+          "total_dim": 2,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}},{
+          "is_array": true,
+          "total_dim": 1,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}}],
       "compiled_data": {
         "tasks": [{
             "name": "update_force_c80_0_kernel_0_serial",
@@ -52,14 +292,134 @@
             "name": "update_force_c80_0_kernel_1_range_for",
             "block_dim": 0,
             "grid_dim": 0}]},
-      "size": 39269,
-      "created_at": 1675679125,
-      "last_used_at": 1675679125},"update_density": {
+      "size": 34735,
+      "created_at": 1678850987,
+      "last_used_at": 1678850987,
+      "rets": [],
+      "ret_type": ptr {
+        "type_kind": 3
+        "content": {
+          "elements_": [],
+          "layout_": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"}},
+      "ret_size": 0,
+      "args_type": ptr {
+        "type_kind": 3
+        "content": {
+          "elements_": [{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_0",
+              "offset": 0},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_1",
+              "offset": 8},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 0
+                    "content": {
+                      "type": 1}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_2",
+              "offset": 16},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 0
+                    "content": {
+                      "type": 1}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_3",
+              "offset": 24},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_4",
+              "offset": 32},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_5",
+              "offset": 40}],
+          "layout_": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"}},
+      "args_size": 48},"update_density": {
       "kernel_key": "update_density",
       "args": [{
-          "is_array": true},{
-          "is_array": true},{
-          "is_array": true}],
+          "is_array": true,
+          "total_dim": 2,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}},{
+          "is_array": true,
+          "total_dim": 1,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 0
+              "content": {
+                "type": 1}}}},{
+          "is_array": true,
+          "total_dim": 1,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 0
+              "content": {
+                "type": 1}}}}],
       "compiled_data": {
         "tasks": [{
             "name": "update_density_c78_0_kernel_0_serial",
@@ -68,37 +428,305 @@
             "name": "update_density_c78_0_kernel_1_range_for",
             "block_dim": 0,
             "grid_dim": 0}]},
-      "size": 29993,
-      "created_at": 1675679125,
-      "last_used_at": 1675679125},"initialize_particle": {
+      "size": 25979,
+      "created_at": 1678850987,
+      "last_used_at": 1678850987,
+      "rets": [],
+      "ret_type": ptr {
+        "type_kind": 3
+        "content": {
+          "elements_": [],
+          "layout_": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"}},
+      "ret_size": 0,
+      "args_type": ptr {
+        "type_kind": 3
+        "content": {
+          "elements_": [{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_0",
+              "offset": 0},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 0
+                    "content": {
+                      "type": 1}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_1",
+              "offset": 8},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 0
+                    "content": {
+                      "type": 1}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_2",
+              "offset": 16}],
+          "layout_": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"}},
+      "args_size": 24},"initialize_particle": {
       "kernel_key": "initialize_particle",
       "args": [{
-          "is_array": true},{
-          "is_array": true},{
-          "is_array": true},{
-          "is_array": true},{
-          "is_array": true}],
+          "is_array": true,
+          "total_dim": 2,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}},{
+          "is_array": true,
+          "total_dim": 2,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}},{
+          "is_array": true,
+          "total_dim": 2,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}},{
+          "is_array": true,
+          "total_dim": 1,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 0
+              "content": {
+                "type": 5}}}},{
+          "is_array": true,
+          "total_dim": 1,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}}],
       "compiled_data": {
         "tasks": [{
-            "name": "initialize_particle_c76_0_kernel_1_serial",
+            "name": "initialize_particle_c76_0_kernel_0_serial",
             "block_dim": 0,
             "grid_dim": 0},{
-            "name": "initialize_particle_c76_0_kernel_0_range_for",
+            "name": "initialize_particle_c76_0_kernel_1_range_for",
             "block_dim": 0,
             "grid_dim": 0}]},
-      "size": 32442,
-      "created_at": 1675679124,
-      "last_used_at": 1675679124},"initialize": {
+      "size": 26471,
+      "created_at": 1678850987,
+      "last_used_at": 1678850987,
+      "rets": [],
+      "ret_type": ptr {
+        "type_kind": 3
+        "content": {
+          "elements_": [],
+          "layout_": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"}},
+      "ret_size": 0,
+      "args_type": ptr {
+        "type_kind": 3
+        "content": {
+          "elements_": [{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_0",
+              "offset": 0},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_1",
+              "offset": 8},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_2",
+              "offset": 16},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 0
+                    "content": {
+                      "type": 5}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_3",
+              "offset": 24},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_4",
+              "offset": 32}],
+          "layout_": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"}},
+      "args_size": 40},"initialize": {
       "kernel_key": "initialize",
       "args": [{
-          "is_array": true},{
-          "is_array": true},{
-          "is_array": true}],
+          "is_array": true,
+          "total_dim": 2,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}},{
+          "is_array": true,
+          "total_dim": 2,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 2
+              "content": {
+                "shape_": [3],
+                "element_": ptr {
+                  "type_kind": 0
+                  "content": {
+                    "type": 1}}}}}},{
+          "is_array": true,
+          "total_dim": 1,
+          "format": 0,
+          "dt_": {
+            "ptr_": ptr {
+              "type_kind": 0
+              "content": {
+                "type": 5}}}}],
       "compiled_data": {
         "tasks": [{
             "name": "initialize_c74_0_kernel_0_serial",
             "block_dim": 0,
             "grid_dim": 0}]},
-      "size": 8304,
-      "created_at": 1675679124,
-      "last_used_at": 1675679124}}}}
+      "size": 6424,
+      "created_at": 1678850987,
+      "last_used_at": 1678850987,
+      "rets": [],
+      "ret_type": ptr {
+        "type_kind": 3
+        "content": {
+          "elements_": [],
+          "layout_": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"}},
+      "ret_size": 0,
+      "args_type": ptr {
+        "type_kind": 3
+        "content": {
+          "elements_": [{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_0",
+              "offset": 0},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 2
+                    "content": {
+                      "shape_": [3],
+                      "element_": ptr {
+                        "type_kind": 0
+                        "content": {
+                          "type": 1}}}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_1",
+              "offset": 8},{
+              "type": ptr {
+                "type_kind": 1
+                "content": {
+                  "pointee_": ptr {
+                    "type_kind": 0
+                    "content": {
+                      "type": 5}},
+                  "addr_space_": 0,
+                  "is_bit_pointer_": false}},
+              "name": "arg_2",
+              "offset": 16}],
+          "layout_": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"}},
+      "args_size": 24}}}}
