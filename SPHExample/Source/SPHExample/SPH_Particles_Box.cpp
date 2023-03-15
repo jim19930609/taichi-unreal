@@ -3,7 +3,7 @@
 #include "SPH_AOT.h"
 #include "Modules/ModuleManager.h"
 
-static SPH_AOT sph_aot;
+static std::unique_ptr<SPH_AOT> sph_aot{nullptr};
 
 // Sets default values
 ASPH_Particles_Box::ASPH_Particles_Box()
@@ -28,23 +28,26 @@ ASPH_Particles_Box::ASPH_Particles_Box()
     {
         InstancedMesh->AddInstance(FTransform(FVector(0.f, 0.f, 0.f)), false);
     }
+
+    if(!sph_aot)
+        sph_aot = std::make_unique<SPH_AOT>();
 }
 
 // Called when the game starts or when spawned
 void ASPH_Particles_Box::BeginPlay()
 {
 	Super::BeginPlay();
-    sph_aot.Initialize();
-    Update(sph_aot.ExportPositions());
+    sph_aot->Initialize();
+    Update(sph_aot->ExportPositions());
 }
 
 // Called every frame
 void ASPH_Particles_Box::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-    sph_aot.Inference();
+    sph_aot->Inference();
 
-    Update(sph_aot.ExportPositions());
+    Update(sph_aot->ExportPositions());
 }
 
 void ASPH_Particles_Box::Update(const std::vector<float> &positions) {
