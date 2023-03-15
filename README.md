@@ -19,7 +19,7 @@ commit: d1a4842 [misc] Remove usage of deprecated kwarg in rw_texture type annot
 C-API library was generated using:
 ```
 git@github.com:taichi-dev/taichi.git
-commit: 2603e6695 [llvm] Unify the llvm context of host and device (#7249)
+commit: 0559411ae [bug] Fix crashing on printing FrontendFuncCallStmt with no return value
 ```
 
 ## Steps to generate Taichi AOT Plugin from scratch
